@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <script src="base64.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id="codes">
+            <label for="currentcode">Current Code:</label><br>
+            <input type="text" id="currentcode" name="currentcode"><br>
+            <button onclick="check('read')">Load</button>
+            <button onclick="check('generate')">Generate</button><br><br><br>
+        </div>
+        <div id="values">
+            <div id="basic">
+                <label for="money">Money:</label><br>
+                <input type="text" id="money" name="money" pattern=""><br>
+
+                <label for="level">Level:</label><br>
+                <input type="text" id="level" name="level"><br>
+
+                <label for="gold">Gold:</label><br>
+                <input type="text" id="gold" name="gold"><br>
+
+                <label for="blackbricks">Black Bricks:</label><br>
+                <input type="text" id="blackbricks" name="blackbricks"><br>
+
+                <label for="skillpoints">Skill Points:</label><br>
+                <input type="text" id="skillpoints" name="skillpoints"><br><br><br>
+            </div>
+
+            <div id="balls">
+                <label for="regballs">Regular Balls:</label><br>
+                <input type="text" id="regballs" name="regballs"><br>
+
+                <label for="plasballs">Plasma Balls:</label><br>
+                <input type="text" id="plasballs" name="plasballs"><br>
+
+                <label for="snipballs">Sniper Balls:</label><br>
+                <input type="text" id="snipballs" name="snipballs"><br>
+
+                <label for="splitballs">Scatter Balls:</label><br>
+                <input type="text" id="splitballs" name="splitballs"><br>
+
+                <label for="cannonballs">Cannonballs:</label><br>
+                <input type="text" id="cannonballs" name="cannonballs"><br>
+
+                <label for="poisballs">Poison Balls:</label><br>
+                <input type="text" id="poisballs" name="poisballs"><br><br><br>
+            </div>
+            
+            <div id="upgrades">
+                <label for="regballtop">Regular Ball Speed Updgrade:</label><br>
+                <input type="text" id="regballtop" name="regballtop"><br>
+
+                <label for="regballbottom">Regular Ball Power Updgrade:</label><br>
+                <input type="text" id="regballbottom" name="regballbottom"><br>
+            
+                <label for="plasballballtop">Plasma Ball Range Updgrade:</label><br>
+                <input type="text" id="plasballtop" name="plasballtop"><br>
+
+                <label for="plasballbottom">Plasma Ball Power Updgrade:</label><br>
+                <input type="text" id="plasballbottom" name="plasballbottom"><br>
+
+                <label for="snipballballtop">Sniper Ball Speed Updgrade:</label><br>
+                <input type="text" id="snipballtop" name="snipballtop"><br>
+
+                <label for="snipballbottom">Sniper Ball Power Updgrade:</label><br>
+                <input type="text" id="snipballbottom" name="snipballbottom"><br>
+
+                <label for="splitballballtop">Scatter Ball Extra Balls Updgrade:</label><br>
+                <input type="text" id="splitballtop" name="splitballtop"><br>
+
+                <label for="splitballbottom">Scatter Ball Power Updgrade:</label><br>
+                <input type="text" id="splitballbottom" name="splitballbottom"><br>
+
+                <label for="cannonballballtop">Cannonball Speed Updgrade:</label><br>
+                <input type="text" id="cannonballtop" name="cannonballtop"><br>
+
+                <label for="cannonballbottom">Cannonball Power Updgrade:</label><br>
+                <input type="text" id="cannonballbottom" name="cannonballbottom"><br>
+
+                <label for="poisballballtop">Poison Ball Speed Updgrade:</label><br>
+                <input type="text" id="poisballtop" name="poisballtop"><br>
+
+                <label for="poisballbottom">Poison Ball Power Updgrade:</label><br>
+                <input type="text" id="poisballbottom" name="poisballbottom"><br><br><br>
+            </div>
+
+            <div id="powerups">
+                <label for="poweruptokens">Powerup Tokens:</label><br>
+                <input type="text" id="poweruptokens" name="poweruptokens"><br>
+
+                <label for="cashedup">Cashed Up used?:</label><br>
+                <input type="checkbox" id="cashedup" name="cashedup"><br>
+
+                <label for="clickfrenzy">Click Frenzy used?:</label><br>
+                <input type="checkbox" id="clickfrenzy" name="clickfrenzy"><br>
+
+                <label for="demoncore">Demon Core used?:</label><br>
+                <input type="checkbox" id="demoncore" name="demoncore"><br>
+
+                <label for="snowball">Snow Ball used?:</label><br>
+                <input type="checkbox" id="snowball" name="snowball"><br>
+
+                <label for="2xgold">2X Gold used?:</label><br>
+                <input type="checkbox" id="2xgold" name="2xgold"><br>
+            </div>
+        </div>
+    </body>
+</html>
