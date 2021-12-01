@@ -6,6 +6,8 @@ var regballtopElement, regballbottomElement, plasballtopElement, plasballbottomE
 
 var poweruptokensElement, cashedupElement, clickfrenzyElement, demoncoreElement, snowballElement, twoxgoldElement
 
+var cashbonusElement
+
 window.onload = function() {
     levelElement = document.getElementById("level");
     moneyElement = document.getElementById("money");
@@ -39,6 +41,8 @@ window.onload = function() {
     demoncoreElement = document.getElementById("demoncore");
     snowballElement = document.getElementById("snowball");
     twoxgoldElement = document.getElementById("2xgold");
+
+    cashbonusElement = document.getElementById("cashbonus");
 }
 
 function read() {
@@ -78,7 +82,123 @@ function read() {
 
 function generate() {
     const code = document.getElementById("currentcode")
-    var string = `${levelElement.value},${moneyElement.value},${goldElement.value},0,0,0,0,0,${poweruptokensElement.value},0,0,1,1,0,44529.99,999999,0,0,0,0,0,0,0,0,0,0,0,0,${regballsElement.value},${plasballsElement.value},${snipballsElement.value},${splitballsElement.value},${cannonballsElement.value},${poisballsElement.value},0,0,0,${regballtopElement.value},${regballbottomElement.value},${plasballtopElement.value},${plasballbottomElement.value},${snipballtopElement.value},${snipballbottomElement.value},${splitballtopElement.value},${splitballbottomElement.value},${cannonballtopElement.value},${cannonballbottomElement.value},${poisballtopElement.value},${poisballbottomElement.value},0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,${String(+cashedupElement.checked)},${String(+clickfrenzyElement.checked)},0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,${blackbricksElement.value},0,0,0,1,${skillpointsElement.value},1,0,0`
+
+    var valuesArray = [
+        levelElement.value,
+        moneyElement.value,
+        goldElement.value,
+        prestigeElement.value,
+        0,
+        0,
+        0,
+        0,
+        poweruptokensElement.value,
+        0,
+        0,
+        1,
+        1,
+        0,
+        44529,
+        999999,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        regballsElement.value,
+        plasballsElement.value,
+        snipballsElement.value,
+        splitballsElement.value,
+        cannonballsElement.value,
+        poisballsElement.value,
+        0,
+        0,
+        0,
+        regballtopElement.value,
+        regballbottomElement.value,
+        plasballtopElement.value,
+        plasballbottomElement.value,
+        snipballtopElement.value,
+        snipballbottomElement.value,
+        splitballtopElement.value,
+        splitballbottomElement.value,
+        cannonballtopElement.value,
+        cannonballbottomElement.value,
+        poisballtopElement.value,
+        poisballbottomElement.value,
+        0,
+        0,
+        0,
+        cashbonusElement.value,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        String(+cashedupElement.checked),
+        String(+clickfrenzyElement.checked),
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        blackbricksElement.value,
+        0,
+        0,
+        0,
+        1,
+        skillpointsElement.value,
+        1,
+        0,
+        0
+    ]
+    var string = valuesArray.join()
     encoded = Base64.encode(string)
     code.value = encoded
 }
