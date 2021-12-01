@@ -6,7 +6,7 @@ var regballtopElement, regballbottomElement, plasballtopElement, plasballbottomE
 
 var poweruptokensElement, cashedupElement, clickfrenzyElement, demoncoreElement, snowballElement, twoxgoldElement
 
-var cashbonusElement
+var prestigeElement, cashbonusElement, ballspeedElement, ballpowElement, vauslasersElement, maxballsElement
 
 window.onload = function() {
     levelElement = document.getElementById("level");
@@ -42,7 +42,12 @@ window.onload = function() {
     snowballElement = document.getElementById("snowball");
     twoxgoldElement = document.getElementById("2xgold");
 
+    prestigeElement = document.getElementById("prestige");
     cashbonusElement = document.getElementById("cashbonus");
+    ballspeedElement = document.getElementById("ballspeed");
+    ballpowElement = document.getElementById("ballpow");
+    vauslasersElement = document.getElementById("vauslasers");
+    maxballsElement = document.getElementById("maxballs");
 }
 
 function read() {
@@ -137,10 +142,10 @@ function generate() {
         0,
         0,
         cashbonusElement.value,
-        0,
-        0,
-        0,
-        0,
+        ballspeedElement.value,
+        ballpowElement.value,
+        vauslasersElement.value,
+        maxballsElement.value,
         0,
         0,
         0,
